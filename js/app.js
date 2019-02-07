@@ -1,4 +1,11 @@
+
+
+
 function showMobilMenu() {
-    document.getElementById("status").classList.toggle("temp");    
+    if(document.getElementById("responsive").className == "resnavmenu"){
+        document.getElementById("responsive").className = "block" ;
+    } else {
+        document.getElementById("responsive").className = "resnavmenu"
+    }
 }
 
