@@ -28,21 +28,21 @@ slider > * {
 slide:nth-child(1) {
     left: 0%;
     animation-delay: -1s;
-    background-image: url(1.jpg);
+    background-image: url(http://www.suttonbookshare.org.uk/files/2013/06/bookshare1.jpg);
     background-size: cover;
     background-position: center;
 }
 
 slide:nth-child(2) {
     animation-delay: 2s;
-    background-image: url(2.jpg);
+    background-image: url(https://www.incimages.com/uploaded_files/image/970x450/getty_883231284_200013331818843182490_335833.jpg);
     background-size: cover;
     background-position: center;
 }
 
 slide:nth-child(3) {
     animation-delay: 5s;
-    background-image: url(3.jpg);
+    background-image: url(https://www.chroniclebooks.com/blog/wp-content/uploads/Perfumes-that-smell-like-old-books.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -50,19 +50,20 @@ slide:nth-child(3) {
 slide:nth-child(4) {
     left: 0%;
     animation-delay: 8s;
-    background-image: url(4.jpg);
+    background-image: url(https://www.incimages.com/uploaded_files/image/970x450/getty_873697724_2000133320009280294_332523.jpg);
     background-size: cover;
     background-position: center;
 }
 
 slide p {
+    background-color: seashell;
     font-family: Comfortaa;
     font-size: 70px;
     text-align: center;
     display: inline-block;
     width: 100%;
     margin-top: 150px;
-    color: #fff;
+    color:gray;
 }
 
 @keyframes slide {
@@ -122,6 +123,7 @@ ul li.active a {
     width: 100%;
     top: 0;
     border-bottom: 2px solid gray;
+    z-index: 99;
 }
 
 .search {
@@ -156,7 +158,7 @@ ul li.active a {
 
 .content {
     text-align: center;
-    height: 800px;
+    height: 690px;
     margin-top: 60px;
 }
 
@@ -182,6 +184,27 @@ ul li.active a {
     margin-top: 75px;
 }
 
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+}
+
+.footer > div {
+    width: 20%;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    padding: 2%;
+    color: antiquewhite;
+}
+
+.footer img {
+    width: 50px;
+    background-color: antiquewhite;
+    padding: 15px ;
+}
+
 @media screen and (max-width: 768px) {
     .toggle {
         display: block;
@@ -205,6 +228,12 @@ ul li.active a {
     }
     .block {
         display: block;
+    }
+    .footer > div {
+        width: 80%;
+    }
+    slide p {
+        font-size: 40px ;
     }
 }
 
